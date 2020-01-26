@@ -1,0 +1,43 @@
+/**
+All Transitions
+*/
+a,.img-overlay,input,textarea,
+.main-nav li.menu-item-has-children:hover > ul{
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.scale{
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+/**
+All Hovers
+*/
+a:hover{
+	text-decoration: none;
+}
+nav.main-nav ul li a:hover,
+nav.main-nav ul li.current-menu-item a,
+.main-nav ul li.menu-item-has-children ul li a:hover,
+.aside-wrp .widget_nav_menu ul li a:hover,
+.aside-wrp .widget_nav_menu ul li.current-menu-item a
+{
+	color:#b00000;
+}
+
+.ftr-info a:hover{
+	color:#fff;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus{
+	border-color: #b00000;
+}
+input[type='submit']:hover{
+	background: #790202;
+}

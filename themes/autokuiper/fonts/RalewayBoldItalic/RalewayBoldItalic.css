@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'RalewayBoldItalic';
+    src: url('RalewayBoldItalic/RalewayBoldItalic.eot');
+    src: url('RalewayBoldItalic/RalewayBoldItalic.eot') format('embedded-opentype'),
+         url('RalewayBoldItalic/RalewayBoldItalic.woff2') format('woff2'),
+         url('RalewayBoldItalic/RalewayBoldItalic.woff') format('woff'),
+         url('RalewayBoldItalic/RalewayBoldItalic.ttf') format('truetype'),
+         url('RalewayBoldItalic/RalewayBoldItalic.svg#RalewayBoldItalic') format('svg');
+}

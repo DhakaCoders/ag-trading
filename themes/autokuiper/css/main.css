@@ -1,0 +1,619 @@
+/**
+import commons
+*/
+@import url('_commons.css');
+
+/**
+import typo
+*/
+@import url('_typo.css');
+
+
+/**
+import spaces
+*/
+@import url('_spaces.css');
+
+
+/**
+import effects
+*/
+@import url('_effects.css');
+
+
+
+
+/**
+Start header
+*/
+@import url('_header.css');
+
+
+
+/**
+Start single and blog
+*/
+@import url('_blog.css');
+
+/**
+Start footer
+*/
+@import url('_footer.css');
+
+/**
+---------------------
+Start home page
+---------------------
+*/
+
+
+
+
+/**
+------------ 
+breadcrumbs
+------------
+*/
+.fl-breadcrumb{
+	background: #272727;
+	padding:9px 0;
+}
+.a-breadcrumbs{
+    padding: 5px  0 4px 37px;
+    font-size: 13.3px;
+    line-height: 13px;
+    list-style: none;
+    margin: 0;
+    font-family: 'KhandRegular';
+    position: relative;
+}
+.a-breadcrumbs:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0px;
+    background: url(../images/home-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width:23px;
+    height: 23px;
+}
+.a-breadcrumbs li{
+    display: inline-block;
+    float: left;
+}
+li.delim{
+    margin: 0 6px;
+}
+
+.a-breadcrumbs a {
+    color: #848484;
+    text-transform:lowercase;
+    display: inline-block;
+    vertical-align: baseline;   
+}
+.a-breadcrumbs a:hover,
+li.active a {
+    color: #b00000;
+}
+
+
+.bar-info-wrp{
+	line-height: initial;
+	line-height: 0;
+}
+.bar-info-wrp a{
+	display: inline-block;
+	vertical-align: baseline;
+	width: 25px;
+	height: 26px;
+	position: relative;
+	margin-left: 5px;
+	background: #b00000;
+	color: #fff;
+	font-size: 13px;
+}
+.bar-info-wrp a i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+}
+.bar-info-wrp a.map-marker:hover{
+	background: #790202;
+}
+
+
+.bar-info-wrp a.envelope:hover{
+	background: #790202;
+}
+
+
+/**
+------------ 
+Sidebar 
+------------
+*/
+
+.sidebar-col{
+	background: #262626;
+	padding: 59px 0 0 23px;
+	margin-top: 1px;
+    font-family: 'KhandRegular';
+}
+
+.aside-wrp{
+	border-right: 2px solid #b00000;
+	padding: 0 20px 0 0;
+    color: #fff;	
+}
+.aside-wrp > div{
+    position:relative;
+    top: -30px;
+}
+.aside-wrp header{
+	padding-bottom: 30px;
+}
+.aside-wrp header span{
+	font-size: 19.5px;
+	line-height: 20px;
+    display: block;
+    padding-bottom: 15px;
+}
+.aside-wrp .widget{
+	padding-bottom: 40px;
+}
+.aside-wrp .widget_categories ul,
+.aside-wrp .widget_nav_menu ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.aside-wrp .widget_categories ul li,
+.aside-wrp .widget_nav_menu ul li{
+    font-size: 24px;
+    line-height: 20px;
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 0;
+    background: none;
+    color: #fff;	
+}
+.aside-wrp .widget_categories ul li a,
+.aside-wrp .widget_nav_menu ul li a{
+	color: inherit;
+	text-decoration: none;
+}
+.aside-wrp .widget ul li:last-child,
+.aside-wrp .widget:last-child{
+	padding-bottom: 0;
+}
+.aside-content, .widget_text{
+	font-size: 20px;
+	line-height: 100%;
+}
+.aside-content .title, .widget_text .title,
+.aside-wrp .widget .title{
+	 display: block;
+	 padding-bottom: 20px;
+	 font-size:20px;
+}
+
+.aside-wrp ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.aside-wrp ul li{
+    padding-bottom: 10px;
+    padding-left: 23px;
+    background: url(../images/list-icon.png);
+    background-repeat: no-repeat;
+}
+.aside-wrp img{
+	padding-bottom: 30px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+
+
+
+/**
+--------------
+entry-con
+--------------
+*/
+.entry-con{
+	padding: 60px 0 220px 15px; 
+}
+
+.product-item{
+	margin-bottom: 55px;
+}
+.product-img{
+	width: 42%;
+	float: left;
+	padding-bottom: 9px;
+	overflow: hidden;
+}
+
+.product-img-inner{
+	position: relative;
+}
+.product-img-inner img{
+    width: 100%;
+}
+
+.img-overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 0;
+	background: url(../images/opacity-gray.png);
+	opacity: 0;
+	z-index: 2;
+	overflow: hidden;
+}
+.img-overlay a{
+	display: inline-block;
+	vertical-align: baseline;
+	width: 257px;
+	height: 71px;
+	position: absolute;
+	text-align: center;
+	padding-top: 16px;
+    font-family: 'RalewayLight';
+    color: #eaeaea;
+    background: rgba(17,17,17,.90);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+}
+.img-overlay a span{
+    display:block;
+    padding-left: 98px;
+    position: relative;
+    text-align:left;
+}
+.img-overlay a span::before {
+	content: "";
+	position: absolute;
+	left: -6px;
+	top: -24px;
+	background: url(../images/button-bg.png);
+	background-repeat: no-repeat;
+	background-size: left center;
+	width: 81px;
+	height: 85px;
+}
+.img-overlay a:hover{
+	color: #b00000;
+}
+.product-img-inner:hover .img-overlay{
+	opacity: 1;
+	height: 100%;
+}
+.product-img-inner:hover .img-overlay a{
+	display: block;
+}
+
+/**
+--------------
+404 page
+--------------
+*/
+.entry-con-404 {
+    padding: 100px 0;
+}
+
+.error-404.not-found {
+    text-align: center;
+}
+
+.cn-404 h1 {
+    color: #EF7615;
+}
+
+.error-404.not-found .page-header {
+    border-bottom: 0px solid #ddd;
+}
+
+
+.product-con{
+	float: left;
+	padding-left: 8px;
+	width: 58%;
+}
+h3.product-title{
+	padding: 14px 15px 11px;
+	margin: 0;
+	background: #dcdcdc;
+	text-transform: uppercase;
+	margin-bottom: 9px;
+	color: #2e2e2e;
+    font-family: 'KhandRegular';
+}
+.home h3.product-title,
+.archive h3.product-title{
+	padding-top: 16px;
+}
+.pruduct-des{
+	padding-left: 15px;
+	min-height: 138px;
+}
+.pruduct-des p{
+    margin: 0;
+    padding-bottom: 14px;
+}
+
+.product-info span{
+	display: inline-block;
+	vertical-align: baseline;
+	height: 55px;
+	background: #000000;
+	margin-right: 6.7px;
+	color: #fff;
+	text-align: center;
+	padding-top: 17px;
+	padding-left: 8px;
+	padding-right: 8px;
+    font-family: 'RalewayExtraBold';
+    margin-bottom: 9px;
+    float: left;
+}
+.product-info span:first-child{
+    font-size: 23.58px;
+    line-height: 100%;
+}
+
+.product-info span:nth-child(2){
+	background: #101010;
+    font-family: 'RalewayMedium';
+}
+
+.product-info span:nth-child(3){
+	background: #202020;
+}
+.product-info span:last-child{
+	background: #404040;
+}
+.product-info span.year{
+	min-width: 80px;
+}
+.product-info span.power {
+	min-width: 92px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 17px;
+	padding-top: 20px;
+}
+.product-info span.km{
+	min-width: 179px;
+}
+.product-info span.price{
+	margin-right: 0;
+	min-width: 135px;
+}
+.product-info-view span{
+	display: block;
+	text-align: left;
+}
+
+.product-img-view{
+	width: 65%;
+	float: left;
+}
+.product-con-view{
+	width: 35%;
+	float: left;
+	padding-left: 8px;
+}
+.pruduct-des-view{
+	float: left;
+	width: 100%;
+	margin-bottom:10px;
+	padding: 22px 18px;
+	margin-top: 10px;
+}
+.product-info-view span{
+	margin-right: 0;
+	width: 100%;
+}
+.product-info-view span label{
+	font-family: 'RalewayRegular';
+	display: inline-block;
+	vertical-align: baseline;
+	font-weight: normal;
+}
+
+
+span.km.benzine.less-pd {
+    min-width: 163px !important;
+}
+
+span.power.benzine {
+    background: #101010;
+}
+
+span.km.electr.less-pd {
+    min-width: 170px !important;
+}
+
+span.power.electr {
+    background: #2b5ca6;
+}
+
+span.power.purpal {
+    background: #1f7866;
+}
+div#fancybox-content {
+    width: 100% !important;
+    height: auto !important;
+}
+
+div#fancybox-content img {
+    width: 100%;
+}
+div#fancybox-title {
+    width: 95.5% !important;
+}
+.img-height-auto img{
+	height: auto;
+	width: 100%;
+}
+.img-overlay-2 a {
+    width: 225px;
+    padding-left: 20px;
+    font-size: 19px;
+    height: 61px;
+    padding-top: 10px;
+    line-height: 20px;
+    text-decoration: none;
+}
+ul.page-numbers {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+ul.page-numbers li {
+    display: inline-block;
+}
+
+ul.page-numbers li a {
+    display: block;
+    padding: 6px 10px 5px;
+    text-align: center;
+    background: #b00000;
+    line-height: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+ul.page-numbers li span.current {
+    background: #790202;
+    padding: 4px 10px;
+    color: #fff;
+}
+
+ul.page-numbers li a:hover {
+    background: #790202;
+}
+
+/**
+----------
+Form
+----------
+*/
+.contact-form-wrp{
+	float: left;
+	width: 100%;
+	padding: 25px 18px 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.d2{
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+}
+.d2:last-child{
+	margin-right: 0;
+}
+
+
+input[type='text'],
+input[type='email'],
+textarea{
+	width: 100%;
+	border: 1px solid #ccc;
+	margin-bottom: 13px;
+	padding: 10px;
+    font-family: 'RalewayMedium';
+    font-size: 16px;
+    background: transparent;
+}
+textarea{
+	height: 92px;
+}
+
+input[type='submit']{
+	width: 120px;
+	height: 40px;
+	text-transform: capitalize;
+	background:#b00000;
+	border: 0;
+	padding: 10px;
+	color: #fff;
+    font-family: 'KhandRegular';
+}
+
+
+/**
+-------------
+Page
+-------------
+*/
+.page-entry-con{
+	padding: 25px 30px;
+    font-family: 'RalewayRegular';
+}
+.page-entry-con h2{
+	margin: 0;
+	padding-bottom: 22px;
+}
+.page-entry-con a{
+	color: #ef7615;
+	text-decoration: underline;
+	display: inline-block;
+	vertical-align: baseline;
+    font-family: 'RalewayBoldItalic';
+}
+.page-entry-con ul{
+	margin: 0;
+	padding: 15px 0 20px;
+	list-style: none;
+}
+.page-entry-con ul li{
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 2px;
+}
+.page-entry-con ul li:before{
+	content: "";
+	background: #ef7615;
+	position: absolute;
+	left: 0;
+	top: 6px;
+	width: 7px;
+	height: 12px;
+}
+
+.page-entry-con blockquote{
+	border-left: 12px solid #ef7615;
+	padding:0 0 0 30px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.wpcf7-form label.error {
+    color: #900;
+    font-size: 11px;
+    float: none;
+    padding-left: 5px;
+    width: 100%;
+    float: left;
+    margin-top: -4px;
+    margin-bottom: 10px;
+}

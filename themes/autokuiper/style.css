@@ -1,0 +1,52 @@
+/*
+Theme Name: Maatwerk website voor relatie
+Theme URI: http://www.meulenkamp-reclame.nl
+Author: Meulenkamp internet en reclamebureau
+Author URI: http://www.meulenkamp-reclame.nl
+Description: Maatwerk desktop en mobiele site
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Html5, Css3, PHP5, Custom post type, Blog
+Text Domain: autokuiper
+*/
+
+@import url('css/main.css');
+.product-item{
+    position: relative;    
+}
+.pritemLink{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.product-item.pritemListing:hover .product-img-inner .img-overlay{
+    opacity: 1;
+    height: 100%;
+}
+.single-product .product-img-inner .img-overlay {
+    opacity: 1;
+    height: 100%;
+}
+.contact-form-wrp br{display: none;}
+.wpcf7-form-control-wrap{display: block;}
+
+.stickyfooter footer .ftr-top {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+#lightgallery{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.img-overlay-2 a img{
+	display: none;
+}
+body .lg-outer .lg-thumb-item.active, body .lg-outer .lg-thumb-item:hover{ border-color: #ef7615; }
