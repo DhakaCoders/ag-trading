@@ -1,0 +1,70 @@
+footer .ftr-top{
+	background:#197431;
+	padding: 35px 0; 
+}
+
+.ftr-info{
+	text-align: center;
+}
+.ftr-info ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ftr-info ul li{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.ftr-info a {
+	display: inline-block;
+	vertical-align: baseline;
+	position: relative;
+	color: #ababab;
+	padding: 10px 0 4px 57px;
+	margin-right: 40px;
+	font-family: 'RalewayThin';
+	font-size: 21px;
+	margin-bottom: 0;
+	line-height: 18px;
+	text-decoration: none;
+}
+.ftr-info ul li:last-child a{
+	margin-right: 0;
+}
+.ftr-info a:before{
+	position: absolute;
+	content: "\f095";
+	width: 39px;
+	height: 39px;
+	background: #b00000;
+	left: 0;
+	top: 0;
+	color: #fff;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.ftr-info a.mail:before{
+	content: "\f003";
+}
+
+.ftr-info a.address:before{
+	content: "\f041";
+}
+.ftr-info a.fb:before{
+	content: "\f09a";
+}
+
+.ftr-btm p{
+	margin: 0;
+	padding: 35px 0 34px;
+    font-family: 'KhandLight';
+    text-align: center;
+    font-size: 20px;
+    line-height: 15px;
+    color: #404040;
+}
