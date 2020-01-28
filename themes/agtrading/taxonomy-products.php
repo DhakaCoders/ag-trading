@@ -1,9 +1,8 @@
 <?php 
 get_header(); 
 
-
-get_template_part('sections/mobile', 'menu');
 get_template_part('sections/breadcrumb');
+get_template_part('sections/mobile', 'menu');
 $term = get_queried_object();
 
 
@@ -40,46 +39,44 @@ query_posts($args);
             while (have_posts()): the_post();
               $thisID   = get_the_ID();
               $pd_img   = wp_get_attachment_image_src( get_post_thumbnail_id($thisID), 'product_img' );
-              $pd_year  = get_field('year', $thisID);
-              $pd_power = get_field('power', $thisID);
-              $pd_miles = get_field('miles', $thisID);
-              $pd_price = get_field('price', $thisID);
-              $car_power_bg = car_power_bg($pd_power);
-        
+              $pattribute  = get_field('pattribute', $thisID);
+              $pd_year = $pattribute['year'];
+              $pd_price = $pattribute['price'];
           ?>
-            <div class="product-item pritemListing border clearfix">
-            <a class="pritemLink" href="<?php the_permalink(); ?>">&nbsp;</a>
+            <div class="product-item hproduct pritemListing border clearfix">
+            <a title="<?php the_title(); ?>" class="pritemLink" href="<?php the_permalink(); ?>">&nbsp;</a>
+              <h3 class="product-title show-xs">
+                <?php
+                  $thetitle = get_the_title();
+                  $getlength = strlen($thetitle);
+                  $thelength = 35;
+                  echo substr($thetitle, 0, $thelength);
+                  if ($getlength > $thelength) echo "...";
+                ?>
+              </h3>
               <div class="product-img">
                 <div class="product-img-inner">
                   <img src="<?php echo $pd_img[0] ?>" alt="<?php the_title(); ?>">
                   <div class="img-overlay">
-                    <a href="<?php the_permalink(); ?>" class="button"><span>Alle foto’s<br> &nbsp;bekijken  ></span></a>
+                    <a href="<?php the_permalink(); ?>" class="button"><span>Alle details<br> &nbsp;bekijken ></span></a>
                   </div>
                 </div>
               </div>
               <div class="product-con">
-                <h3 class="product-title">
-<?php
-$thetitle = get_the_title();
-$getlength = strlen($thetitle);
-$thelength = 35;
-echo substr($thetitle, 0, $thelength);
-if ($getlength > $thelength) echo "...";
-?>
+                <h3 class="product-title hide-xs">
+                <?php
+                  $thetitle = get_the_title();
+                  $getlength = strlen($thetitle);
+                  $thelength = 35;
+                  echo substr($thetitle, 0, $thelength);
+                  if ($getlength > $thelength) echo "...";
+                ?>
                 </h3>
-                <div class="pruduct-des">
-<?php
-$thetitle = get_the_excerpt();
-$getlength = strlen($thetitle);
-$thelength = 225;
-echo substr($thetitle, 0, $thelength);
-if ($getlength > $thelength) echo "...";
-?>
+                <div class="pruduct-des hide-xs">
+                  <?php the_excerpt(); ?>
                 </div>
                 <div class="product-info clearfix">
                   <span class="year"><?php echo $pd_year; ?></span>
-                  <span class="power <?php echo $car_power_bg; ?>"><?php echo $pd_power; ?></span>
-                  <span class="km <?php echo $car_power_bg; ?>"><?php echo $pd_miles; ?> KM </span>
                   <span class="price">€ <?php echo $pd_price; ?></span>
                 </div>
               </div>

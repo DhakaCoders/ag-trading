@@ -102,3 +102,30 @@
          url('robotoRegular/robotoRegular.ttf') format('truetype'),
          url('robotoRegular/robotoRegular.svg#robotoRegular') format('svg');
 }
+@font-face {
+    font-family: 'robotoBold';
+    src: url('robotoBold/robotoBold.eot');
+    src: url('robotoBold/robotoBold.eot') format('embedded-opentype'),
+         url('robotoBold/robotoBold.woff2') format('woff2'),
+         url('robotoBold/robotoBold.woff') format('woff'),
+         url('robotoBold/robotoBold.ttf') format('truetype'),
+         url('robotoBold/robotoBold.svg#robotoBold') format('svg');
+}
+@font-face {
+    font-family: 'kanitRegular';
+    src: url('kanitRegular/kanitRegular.eot');
+    src: url('kanitRegular/kanitRegular.eot') format('embedded-opentype'),
+         url('kanitRegular/kanitRegular.woff2') format('woff2'),
+         url('kanitRegular/kanitRegular.woff') format('woff'),
+         url('kanitRegular/kanitRegular.ttf') format('truetype'),
+         url('kanitRegular/kanitRegular.svg#kanitRegular') format('svg');
+}
+@font-face {
+    font-family: 'kanitLight';
+    src: url('kanitLight/kanitLight.eot');
+    src: url('kanitLight/kanitLight.eot') format('embedded-opentype'),
+         url('kanitLight/kanitLight.woff2') format('woff2'),
+         url('kanitLight/kanitLight.woff') format('woff'),
+         url('kanitLight/kanitLight.ttf') format('truetype'),
+         url('kanitLight/kanitLight.svg#kanitLight') format('svg');
+}

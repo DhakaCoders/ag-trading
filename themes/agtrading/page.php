@@ -1,11 +1,9 @@
 <?php 
 get_header(); 
 
-
-get_template_part('sections/mobile', 'menu');
 get_template_part('sections/breadcrumb');
+get_template_part('sections/mobile', 'menu');
 while(have_posts()): the_post();
-  $show_hide_sidebar = (int)get_field('show_sidebar', $post->ID);
   $isHideTitle = get_field('hide_title', $post->ID);
   $page_title="";
 
@@ -16,28 +14,19 @@ while(have_posts()): the_post();
   }else{
     $page_title = get_the_title();
   }
-
-  $bs_class_content = 'col-xs-12'; 
-  $bs_class_sidebar = '';
-  if($show_hide_sidebar === 1){
-    $bs_class_content = 'col-sm-8 col-md-9'; 
-    $bs_class_sidebar = 'col-sm-4 col-md-3'; 
-  }
 ?>
 <section class="main-content">
   <div class="container">
       <div class="row">
-        <?php if($show_hide_sidebar === 1): ?>
-        <div  class="<?php echo $bs_class_sidebar; ?>">
+        <div  class="col-sm-4 col-md-3">
           <div class="sidebar-col">
             <aside class="aside-wrp">
               <?php if ( is_active_sidebar( 'page_left_sidebar' ) ) dynamic_sidebar( 'page_left_sidebar' );?>
             </aside>
           </div>
         </div>
-        <?php endif; ?>
-        <div class="<?php echo $bs_class_content; ?>">
-          <div class="entry-con">
+        <div class="col-sm-8 col-md-9">
+          <div class="page-entry-con-wrap">
             <div class="page-entry-con">
               <?php 
                 if(!is_array($isHideTitle)) printf('<h2>%s</h2>', $page_title);

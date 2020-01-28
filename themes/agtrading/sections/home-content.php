@@ -24,8 +24,17 @@
               $pd_year = $pattribute['year'];
               $pd_price = $pattribute['price'];
           ?>
-            <div class="product-item pritemListing border clearfix">
+            <div class="product-item hproduct pritemListing border clearfix">
             <a title="<?php the_title(); ?>" class="pritemLink" href="<?php the_permalink(); ?>">&nbsp;</a>
+              <h3 class="product-title show-xs">
+                <?php
+                  $thetitle = get_the_title();
+                  $getlength = strlen($thetitle);
+                  $thelength = 35;
+                  echo substr($thetitle, 0, $thelength);
+                  if ($getlength > $thelength) echo "...";
+                ?>
+              </h3>
               <div class="product-img">
                 <div class="product-img-inner">
                   <img src="<?php echo $pd_img[0] ?>" alt="<?php the_title(); ?>">
@@ -35,7 +44,7 @@
                 </div>
               </div>
               <div class="product-con">
-                <h3 class="product-title">
+                <h3 class="product-title hide-xs">
                 <?php
                   $thetitle = get_the_title();
                   $getlength = strlen($thetitle);
@@ -44,7 +53,7 @@
                   if ($getlength > $thelength) echo "...";
                 ?>
                 </h3>
-                <div class="pruduct-des">
+                <div class="pruduct-des hide-xs">
                   <?php the_excerpt(); ?>
                 </div>
                 <div class="product-info clearfix">

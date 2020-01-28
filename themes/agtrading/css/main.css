@@ -60,23 +60,23 @@ breadcrumbs
 }
 .a-breadcrumbs{
     padding: 5px  0 4px 37px;
-    font-size: 13.3px;
+    font-size: 13px;
     line-height: 13px;
     list-style: none;
     margin: 0;
-    font-family: 'KhandRegular';
+    font-family: 'kanitRegular';
     position: relative;
 }
 .a-breadcrumbs:before{
     content: "";
     position: absolute;
-    left: 0;
-    top:0px;
+    left: 14px;
+    top: 6px;
     background: url(../images/home-icon.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width:23px;
-    height: 23px;
+    width: 11px;
+    height: 10px;
 }
 .a-breadcrumbs li{
     display: inline-block;
@@ -87,14 +87,14 @@ li.delim{
 }
 
 .a-breadcrumbs a {
-    color: #848484;
+    color: #4a4a4a;
     text-transform:lowercase;
     display: inline-block;
     vertical-align: baseline;   
 }
 .a-breadcrumbs a:hover,
 li.active a {
-    color: #b00000;
+    color: #197431;
 }
 
 
@@ -140,9 +140,7 @@ Sidebar
 
 .sidebar-col{
 	background: #f6f6f6;
-	padding: 59px 0 0 23px;
-	margin-top: 1px;
-    font-family: 'KhandRegular';
+    padding: 48px 0 0 15px;
 }
 
 .aside-wrp{
@@ -152,7 +150,6 @@ Sidebar
 }
 .aside-wrp > div{
     position:relative;
-    top: -30px;
 }
 .aside-wrp header{
 	padding-bottom: 30px;
@@ -164,7 +161,7 @@ Sidebar
     padding-bottom: 15px;
 }
 .aside-wrp .widget{
-	padding-bottom: 40px;
+	padding-bottom: 45px;
 }
 .aside-wrp .widget_categories ul,
 .aside-wrp .widget_nav_menu ul{
@@ -174,13 +171,14 @@ Sidebar
 }
 .aside-wrp .widget_categories ul li,
 .aside-wrp .widget_nav_menu ul li{
-    font-size: 24px;
+    font-size: 19px;
     line-height: 20px;
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     padding-left: 0;
     background: none;
     color: #2e2e2e;	
+    font-family: 'kanitRegular';
 }
 .aside-wrp .widget_categories ul li a,
 .aside-wrp .widget_nav_menu ul li a{
@@ -192,14 +190,15 @@ Sidebar
 	padding-bottom: 0;
 }
 .aside-content, .widget_text{
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 100%;
 }
 .aside-content .title, .widget_text .title,
 .aside-wrp .widget .title{
 	 display: block;
 	 padding-bottom: 20px;
-	 font-size:20px;
+	 font-size:16px;
+	 font-family: 'kanitRegular';
 }
 
 .aside-wrp ul{
@@ -228,7 +227,7 @@ entry-con
 --------------
 */
 .entry-con{
-	padding: 60px 0 220px 15px; 
+	padding: 45px 0 220px 24px; 
 }
 
 .product-item{
@@ -266,9 +265,9 @@ entry-con
 	position: absolute;
 	text-align: center;
 	padding-top: 16px;
-    font-family: 'RalewayLight';
-    color: #eaeaea;
-    background: rgba(17,17,17,.90);
+    font-family: 'kanitLight';
+    color: #2e2e2e;
+    background: rgba(255,255,255,.90);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -286,8 +285,8 @@ entry-con
 .img-overlay a span::before {
 	content: "";
 	position: absolute;
-	left: -6px;
-	top: -24px;
+	left: 18px;
+    top: -16px;
 	background: url(../images/button-bg.png);
 	background-repeat: no-repeat;
 	background-size: left center;
@@ -326,7 +325,9 @@ entry-con
     border-bottom: 0px solid #ddd;
 }
 
-
+.product-item.hproduct {
+    margin-bottom: 24px;
+}
 .product-con{
 	float: left;
 	padding-left: 8px;
@@ -335,11 +336,10 @@ entry-con
 h3.product-title{
 	padding: 14px 15px 11px;
 	margin: 0;
-	background: #dcdcdc;
-	text-transform: uppercase;
+	background: #eeeeee;
 	margin-bottom: 9px;
 	color: #2e2e2e;
-    font-family: 'KhandRegular';
+    font-family: 'kanitRegular';
 }
 .home h3.product-title,
 .archive h3.product-title{
@@ -357,32 +357,25 @@ h3.product-title{
 .product-info span{
 	display: inline-block;
 	vertical-align: baseline;
-	height: 55px;
-	background: #000000;
+	height: 54px;
+	background: #197431;
 	margin-right: 6.7px;
 	color: #fff;
 	text-align: center;
-	padding-top: 17px;
+	padding-top: 14px;
 	padding-left: 8px;
 	padding-right: 8px;
-    font-family: 'RalewayExtraBold';
+	font-size: 23.58px;
+    font-family: 'kanitRegular';
     float: left;
 }
 .product-info span:first-child{
-    font-size: 23.58px;
     line-height: 100%;
 }
 
-.product-info span:nth-child(2){
-	background: #101010;
-    font-family: 'RalewayMedium';
-}
-
-.product-info span:nth-child(3){
-	background: #202020;
-}
 .product-info span:last-child{
-	background: #404040;
+	background: transparent;
+	color: #197431;
 }
 .product-info span.year{
 	min-width: 80px;
@@ -398,45 +391,119 @@ h3.product-title{
 	min-width: 179px;
 }
 .product-info span.price{
-	margin-right: 0;
-	min-width: 135px;
+    margin-right: 13px;
+    float: right;
+    padding-top: 10px;
+
 }
 .product-info-view span{
 	display: block;
 	text-align: left;
 }
-
+.product-item .product-title{
+	font-size: 28px;
+}
 .product-img-view{
-	width: 65%;
+	width: 68%;
 	float: left;
 }
 .product-con-view{
-	width: 35%;
+	width: 32%;
 	float: left;
 	padding-left: 8px;
 }
 .pruduct-des-view{
 	float: left;
-	width: 100%;
-	margin-bottom:10px;
-	padding: 22px 18px;
-	margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 22px 18px 6px;
+    margin-top: 10px;
+    background: #eeeeee;
+}
+.pruduct-des-view h1:first-child,
+.pruduct-des-view h2:first-child,
+.pruduct-des-view h3:first-child,
+.pruduct-des-view h4:first-child,
+.pruduct-des-view h5:first-child,
+.pruduct-des-view h6:first-child{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 18px;
 }
 .product-info-view span{
 	margin-right: 0;
 	width: 100%;
 }
-.product-info-view span label{
-	font-family: 'RalewayRegular';
-	display: inline-block;
-	vertical-align: baseline;
-	font-weight: normal;
-}
 
+.img-overlay.lightboxbtn a span{
+   padding-left: 66px;
+}
+.img-overlay.lightboxbtn a span sub{
+	position: relative;
+    top: 1px;
+    font-size: 12px;
+    left: 4px;
+}
+.img-overlay.lightboxbtn a span::before {
+    left: -2px;
+}
+.img-overlay.lightboxbtn a:hover{
+	color: #2e2e2e;
+}
 .product-info.clearfix {
     background: #fdd834;
 }
+.product-info.product-info-view{
+    background: #008a13;
+}
 
+.product-info.product-info-view span {
+    color: #fff;
+    padding-left: 14px;
+}
+.intereste-questions {
+    background: #eeeeee;
+    padding: 12px 15px 18px;
+    font-size: 19px;
+    color: #2e2e2e;
+    margin: 10px 0;
+    font-family: 'kanitLight';
+}
+.intereste-questions h4{
+	margin: 0;
+	padding: 0;
+}
+.question-info {
+    margin-top: 15px;
+}
+.intereste-questions a{
+	display: block;
+	color: #2e2e2e;
+	margin-bottom: 8px;
+	padding-left: 29px;
+	text-decoration: none;
+}
+.intereste-questions a:hover{
+	color: #008a13;
+}
+.intereste-questions a:last-child{
+	margin-bottom: 0px;
+}
+.intereste-questions .mailto{
+	background-image: url('../images/sidebar-mail.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.intereste-questions .tel{
+	background-image: url('../images/sidebar-tel.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.intereste-questions .whatsapp{
+	background-image: url('../images/sidebar-whatsapp.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
 span.km.benzine.less-pd {
     min-width: 163px !important;
 }
@@ -553,11 +620,11 @@ input[type='submit']{
 	width: 120px;
 	height: 40px;
 	text-transform: capitalize;
-	background:#b00000;
+	background:#008a13;
 	border: 0;
 	padding: 10px;
 	color: #fff;
-    font-family: 'KhandRegular';
+    font-family: 'kanitRegular';
 }
 
 
@@ -568,7 +635,6 @@ Page
 */
 .page-entry-con{
 	padding: 25px 30px;
-    font-family: 'RalewayRegular';
 }
 .page-entry-con h2{
 	margin: 0;
@@ -579,7 +645,6 @@ Page
 	text-decoration: underline;
 	display: inline-block;
 	vertical-align: baseline;
-    font-family: 'RalewayBoldItalic';
 }
 .page-entry-con ul{
 	margin: 0;
@@ -617,4 +682,62 @@ Page
     float: left;
     margin-top: -4px;
     margin-bottom: 10px;
+}
+
+.toggle-wrap{
+	margin-top: 25px;
+    position: relative;
+    padding-left: 219px;
+}
+.mobile-social-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.toggle-bar {
+    float: right;
+    width: 100%;
+}
+.mobile-social-icon a{
+  display: inline-block;
+  width: 65px;
+  height: 60px;
+  background: #fdd834;
+  margin-right: 4px;
+  text-align: center;
+}
+
+.mobile-social-icon .mailto{
+	background-image: url('../images/mbmail.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.mobile-social-icon .tel{
+	background-image: url('../images/mbtel.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.mobile-social-icon .whatsapp{
+	background-image: url('../images/mbwhatsapp.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.mobile-menu {
+}
+.mb-menu-inner{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    background: rgba(25,116,49,.9);
+    display: none;
+    padding: 30px 33px;
+}
+.cross-btn {
+    position: absolute;
+    top: 26px;
+    right: 32px;
 }

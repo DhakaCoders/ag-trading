@@ -2,13 +2,13 @@
 Start header
 */
 header.header{
-	padding-top: 20px;
+	padding-top: 18px;
 	background: #ffffff;
 }
 
 header .logo{
 	margin: 0;
-	padding: 0 0 24px 12px;
+	padding: 0 0 18px 0px;
 }
 header .logo a{
 	max-width: 440px;
@@ -37,18 +37,18 @@ header .logo a img{
 	list-style: none;
 }
 .main-nav > ul{
-	padding: 46px 0 0;
+	padding: 42px 0 0;
 }
 .main-nav > ul > li{
-	padding: 0 12px 30px;
-	display: inline-block;
-	vertical-align: baseline;
+	padding: 0 16px 25px;
+    display: inline-block;
+    vertical-align: baseline;
 }
 .main-nav > ul > li:last-child{
 	padding-right: 0;
 }
 .main-nav ul li{
-    font-family: 'KhandLight';
+    font-family: 'kanitLight';
     font-size: 19px;
     line-height: 100%;
     color: #2e2e2e;

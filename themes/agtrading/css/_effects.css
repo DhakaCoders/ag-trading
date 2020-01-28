@@ -24,11 +24,16 @@ nav.main-nav ul li a:hover,
 nav.main-nav ul li.current-menu-item a,
 .main-nav ul li.menu-item-has-children ul li a:hover,
 .aside-wrp .widget_nav_menu ul li a:hover,
-.aside-wrp .widget_nav_menu ul li.current-menu-item a
-{
-	color:#b00000;
+.aside-wrp .widget_nav_menu ul li.current-menu-item a{
+	color:#197431;
 }
 
+.mb-menu-inner ul li a:hover,
+.mb-menu-inner ul li.current-menu-item a,
+.mb-menu-inner ul.sub-menu li a:hover,
+.mb-menu-inner ul.sub-menu li.current-menu-item a{
+	color:#fdd834;
+}
 .ftr-info a:hover{
 	color:#fff;
 }
@@ -36,8 +41,8 @@ nav.main-nav ul li.current-menu-item a,
 input[type='text']:focus,
 input[type='email']:focus,
 textarea:focus{
-	border-color: #b00000;
+	border-color: #fdd834;
 }
 input[type='submit']:hover{
-	background: #790202;
+	background: #fdd834;
 }

@@ -22,20 +22,21 @@ if( !function_exists('autokuiper_theme_setup') ){
 		 'flex-height' => true,
 		 'flex-width'  => true,
 		) );
-		add_theme_support('post-thumbnails');
+	add_theme_support('post-thumbnails');
     add_image_size('product_img', 372, 260, true);
-		add_image_size('product_detail_img', 614, 429, true);
+    add_image_size('gallery_thumb', 284, 200, true);
+	add_image_size('product_detail_img', 614, 429, true);
     add_image_size('blog-thumb', 180, 130, true); 
     add_image_size('banner_img', 1200, 368, true);
-		add_theme_support( 'html5', array(
-			'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
-		) );
+	add_theme_support( 'html5', array(
+		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
+	) );
 
-		register_nav_menus( array(
-			'header_menu' => __( 'Main Menu', THEME_NAME ),
-			//'secendary_menu' => __( 'Secendary Menu', THEME_NAME ),
-			//'product_category' => __( 'Product Category', THEME_NAME ),
-		) );
+	register_nav_menus( array(
+		'header_menu' => __( 'Main Menu', THEME_NAME ),
+		//'secendary_menu' => __( 'Secendary Menu', THEME_NAME ),
+		//'product_category' => __( 'Product Category', THEME_NAME ),
+	) );
 
 	}
 
@@ -47,9 +48,8 @@ Enqueue Scripts->>
 */
 function autokuiper_theme_scripts(){
 	
-	include_once( THEME_DIR . '/enq-scripts/bootstrap.php' );;
-	include_once( THEME_DIR . '/enq-scripts/fonts.php' );
-  //include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
+  include_once( THEME_DIR . '/enq-scripts/bootstrap.php' );;
+  include_once( THEME_DIR . '/enq-scripts/fonts.php' );
   include_once( THEME_DIR . '/enq-scripts/lightgallery.php' );
   include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
 	
@@ -68,10 +68,27 @@ if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 /**
 Includes->>
 */
-include_once( THEME_DIR . '/inc/autokuiper-customizer.php' );
+include_once( THEME_DIR . '/inc/customizer.php' );
 include_once( THEME_DIR . '/inc/breadcrumbs.php' );
 include_once( THEME_DIR . '/inc/widget-area.php' );
+include_once( THEME_DIR . '/inc/cbv-functions.php' );
 
+/**
+ACF Option pages->>
+*/
+if( function_exists('acf_add_options_page') ) {	
+	
+	//parent tab
+	//acf_add_options_page( 'Opties' );
+    acf_add_options_page(array(
+        'page_title' 	=> __('Options', THEME_NAME),
+        'menu_title' 	=> __('Options', THEME_NAME),
+        'menu_slug' 	=> 'cbv_options',
+        'capability' 	=> 'edit_posts',
+        //'redirect' 	    => false
+    ));
+
+}
 function modify_read_more_link() {
     return '<a class="more_button" href="' . get_permalink() . '"> ...Read More</a>';
 }

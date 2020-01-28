@@ -23,19 +23,26 @@
     
     $banner_img = wp_get_attachment_image_src( get_post_thumbnail_id( $thisID ), 'banner_img' );
 ?>
+<?php 
+  $logoObj = get_field('logo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+?>
 <header class="header">
   <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-4">
           <h1 class="logo">
-            <?php if ( function_exists( 'the_custom_logo' )) {
-                the_custom_logo();
-            }?>
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+              <?php echo $logo_tag; ?>
+            </a>
           </h1>
         </div>
         <div class="col-sm-8 hide-xs">
           <div class="hdr-rgt-col clearfix">
-            <h1 style="display:none;">Stadskanaal</h1>
             <nav class="main-nav">
               <?php
                 $args = array(
