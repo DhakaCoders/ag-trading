@@ -1,5 +1,5 @@
 <?php
-function autokuiper_breadcrumbs() {
+function agtrading_breadcrumbs() {
 
   /* === OPTIONS === */
   $text['home']     = 'home'; // text for the 'Home' link

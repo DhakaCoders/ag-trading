@@ -9,7 +9,7 @@ function builder_customizer_register($wp_customize){
 	 $wp_customize->add_control( 
 	  new WP_Customize_Image_Control( $wp_customize,'favicon', 
 	  array(
-	  'label'  => __('Favicon', 'autokuiper'),
+	  'label'  => __('Favicon', THEME_NAME),
 	  'section'  => 'title_tagline',
 	  'priority'   => 9,
 	  'settings'  => 'favicon'
