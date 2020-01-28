@@ -4,7 +4,7 @@
 Constants->>
 */
 
-defined('THEME_NAME') or define('THEME_NAME', 'autokuiper');
+defined('THEME_NAME') or define('THEME_NAME', 'agtrading');
 defined( 'THEME_DIR' ) or define( 'THEME_DIR', get_template_directory() );
 defined( 'THEME_URI' ) or define( 'THEME_URI', get_template_directory_uri() );
 defined( 'PER_PAGE' ) or define( 'PER_PAGE', get_option( 'posts_per_page' ) );
@@ -12,9 +12,9 @@ defined( 'PER_PAGE' ) or define( 'PER_PAGE', get_option( 'posts_per_page' ) );
 /**
 Theme Setup->>
 */
-if( !function_exists('autokuiper_theme_setup') ){
+if( !function_exists('agtrading_theme_setup') ){
 	
-	function autokuiper_theme_setup(){
+	function agtrading_theme_setup(){
 		add_theme_support('title-tag');
 		add_theme_support( 'custom-logo', array(
 		 'height'      => 110,
@@ -41,7 +41,7 @@ if( !function_exists('autokuiper_theme_setup') ){
 	}
 
 }
-add_action( 'after_setup_theme', 'autokuiper_theme_setup' );
+add_action( 'after_setup_theme', 'agtrading_theme_setup' );
 
 /**
 Enqueue Scripts->>
