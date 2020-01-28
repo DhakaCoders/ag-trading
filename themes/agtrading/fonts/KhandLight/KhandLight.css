@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'KhandLight';
-    src: url('KhandLight/KhandLight.eot');
-    src: url('KhandLight/KhandLight.eot') format('embedded-opentype'),
-         url('KhandLight/KhandLight.woff2') format('woff2'),
-         url('KhandLight/KhandLight.woff') format('woff'),
-         url('KhandLight/KhandLight.ttf') format('truetype'),
-         url('KhandLight/KhandLight.svg#KhandLight') format('svg');
-}

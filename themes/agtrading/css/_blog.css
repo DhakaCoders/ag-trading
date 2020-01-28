@@ -33,10 +33,14 @@
 .blog_pg_ar h3.blog_test {
   margin: 0;
 }
-.blog_pg_ar h3.blog_test a, a.more_button{
-  color: #193761;
+.blog_pg_ar h3.blog_test a,
+ a.more_button{
+  color: #3d3d3d;
 }
-
+.blog_pg_ar h3.blog_test a:hover,
+ a.more_button:hover{
+  color: #197431!important;
+}
 .blog_pg_ar h3.blog_test a:hover, .rpwe-summary a:hover, a.more_button:hover{color:#EF7615;}
 .blog_pg_ar span.blog_date {
     color: #939393;

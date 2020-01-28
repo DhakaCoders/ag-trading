@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'KhandRegular';
-    src: url('KhandRegular/KhandRegular.eot');
-    src: url('KhandRegular/KhandRegular.eot') format('embedded-opentype'),
-         url('KhandRegular/KhandRegular.woff2') format('woff2'),
-         url('KhandRegular/KhandRegular.woff') format('woff'),
-         url('KhandRegular/KhandRegular.ttf') format('truetype'),
-         url('KhandRegular/KhandRegular.svg#KhandRegular') format('svg');
-}

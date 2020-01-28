@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'RalewaySemiBold';
-    src: url('RalewaySemiBold/RalewaySemiBold.eot');
-    src: url('RalewaySemiBold/RalewaySemiBold.eot') format('embedded-opentype'),
-         url('RalewaySemiBold/RalewaySemiBold.woff2') format('woff2'),
-         url('RalewaySemiBold/RalewaySemiBold.woff') format('woff'),
-         url('RalewaySemiBold/RalewaySemiBold.ttf') format('truetype'),
-         url('RalewaySemiBold/RalewaySemiBold.svg#RalewaySemiBold') format('svg');
-}

@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'RalewayLight';
-    src: url('RalewayLight/RalewayLight.eot');
-    src: url('RalewayLight/RalewayLight.eot') format('embedded-opentype'),
-         url('RalewayLight/RalewayLight.woff2') format('woff2'),
-         url('RalewayLight/RalewayLight.woff') format('woff'),
-         url('RalewayLight/RalewayLight.ttf') format('truetype'),
-         url('RalewayLight/RalewayLight.svg#RalewayLight') format('svg');
-}

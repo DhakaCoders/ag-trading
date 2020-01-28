@@ -44,9 +44,9 @@ header .logo a img{
     display: inline-block;
     vertical-align: baseline;
 }
-.main-nav > ul > li:last-child{
+/*.main-nav > ul > li:last-child{
 	padding-right: 0;
-}
+}*/
 .main-nav ul li{
     font-family: 'kanitLight';
     font-size: 19px;
