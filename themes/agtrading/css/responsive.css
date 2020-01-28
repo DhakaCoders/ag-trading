@@ -365,6 +365,12 @@
     .a-breadcrumbs::before {
     	top: 10px;
     }
+    .entry-con{
+    	padding-top: 25px;
+    }
+    .product-item .product-title{
+    	margin-bottom: 11px;
+    }
 }
 
 
@@ -415,6 +421,9 @@
     .toggle-btn {
 	    width: 30px;
 	}
+	.entry-con{
+		padding-top: 25px;
+	}
 }
 /*----- max-width 449px -----*/
 @media(max-width: 449px){
@@ -439,6 +448,10 @@
 	.ftr-info ul li:last-child{
 	    float: none;
 	}
+	.mobile-social-icon .mailto {
+	    background-size: 40px auto;
+	}
+
 }
 @media(max-width: 388px){
 	.toggle-wrap {

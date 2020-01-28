@@ -59,7 +59,7 @@ breadcrumbs
 	padding:9px 0;
 }
 .a-breadcrumbs{
-    padding: 5px  0 4px 37px;
+    padding: 5px  0 4px 35px;
     font-size: 13px;
     line-height: 13px;
     list-style: none;
@@ -70,7 +70,7 @@ breadcrumbs
 .a-breadcrumbs:before{
     content: "";
     position: absolute;
-    left: 14px;
+    left: 15px;
     top: 6px;
     background: url(../images/home-icon.png);
     background-repeat: no-repeat;
@@ -141,6 +141,7 @@ Sidebar
 .sidebar-col{
 	background: #f6f6f6;
     padding: 48px 0 0 15px;
+    padding-bottom: 20px;
 }
 
 .aside-wrp{
@@ -622,7 +623,7 @@ input[type='submit']{
 	text-transform: capitalize;
 	background:#008a13;
 	border: 0;
-	padding: 10px;
+	padding: 0 10px;
 	color: #fff;
     font-family: 'kanitRegular';
 }
@@ -641,10 +642,13 @@ Page
 	padding-bottom: 22px;
 }
 .page-entry-con a{
-	color: #ef7615;
+	color: #fdd834;
 	text-decoration: underline;
 	display: inline-block;
 	vertical-align: baseline;
+}
+.page-entry-con a:hover{
+	color: #008a13;
 }
 .page-entry-con ul{
 	margin: 0;
@@ -667,7 +671,7 @@ Page
 }
 
 .page-entry-con blockquote{
-	border-left: 12px solid #ef7615;
+	border-left: 12px solid #008a13;
 	padding:0 0 0 30px;
 	margin-bottom: 30px;
 	margin-top: 15px;
